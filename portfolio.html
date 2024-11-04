@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="icon" href="/images/weblogo.png" />
+        <title id="title">Portfolio</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo">
+                <h1>W</h1>
+            </div>
+            <div class="navbar">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/about.html" class="nav-link">About Me</a>
+                <a href="/portfolio.html" class="nav-link">Portfolio</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+        <p style="font-size: 5rem; "></p>
+        <script src="function.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+            var copy = document.querySelector(".logos-slide").cloneNode(true);
+            document.querySelector(".logos").appendChild(copy);
+        </script>
+    </body>
+</html>

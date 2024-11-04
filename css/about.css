@@ -1,0 +1,26 @@
+.about-section {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	background-color: var(--background-color);
+	text-align: center;
+	top: 7rem;
+	position: absolute;
+	margin-bottom: 3rem;
+}
+.about-text {
+	font-family: var(--font-family);
+	color: var(--highlight-color);
+	text-shadow: var(--text-shadow);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-top: 3.5rem;
+}
+.about-text h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	border: solid black 2px;
+	border-radius: 10px;
+}
