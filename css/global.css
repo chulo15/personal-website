@@ -58,7 +58,7 @@ body {
 	background-color: var(--secondary-color);
 }
 
-.logo h1 {
+#logo h1 {
 	font-family: var(--font-family);
 	color: #ffffff;
 	text-shadow: var(--text-shadow);
@@ -67,12 +67,12 @@ body {
 	font-weight: 500;
 }
 
-.logo img {
+#logo img {
 	width: 100px;
 	height: auto;
 }
 
-.intro-text {
+#intro-text {
 	font-family: var(--font-family);
 	color: var(--secondary-color);
 	font-size: 1.5rem;
@@ -81,14 +81,14 @@ body {
 	padding-top: 3rem;
 }
 
-.intro-text h1,
+#intro-text h1,
 h2,
 h3 {
 	margin: 1rem;
 	font-weight: 500;
 }
 
-.intro-text button {
+#intro-text button {
 	color: var(--background-color);
 	border: none;
 	background-color: var(--secondary-color);
@@ -101,7 +101,7 @@ h3 {
 	transition: background-color 0.3s ease-in-out;
 }
 
-.intro-text button:hover {
+#intro-text button:hover {
 	background-color: var(--button-hover-color);
 }
 
@@ -121,32 +121,6 @@ h3 {
 	top: 50%;
 	left: 120%;
 	background: #000000;
-}
-
-.cursor-dot,
-.cursor-outline {
-	pointer-events: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-radius: 50%;
-	opacity: 0;
-	transform: translate(-50%, -50%);
-	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
-	size: 8px;
-	width: 5%;
-	height: 5%;
-	background-color: blue;
-}
-
-.cursor-outline {
-	size: 40px;
-	width: 5%;
-	height: 5%;
-	background-color: rgba(light-blue, 0.5);
 }
 
 ::content {
@@ -185,4 +159,12 @@ h3 {
 	font-size: 1rem;
 	font-weight: 500;
 	margin-top: 3.5rem;
+}
+button{	
+	width: 5%;
+	height: 5%;
+}
+button img{
+	width: 100%;
+	height: 100%;
 }

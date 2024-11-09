@@ -1,5 +1,5 @@
-.home-page {
+/* .home-page {
 	width: 100%;
-	height: calc(100vh - var(--nav-height)); /* Use the CSS variable */
+	height: calc(100vh - var(--nav-height));
 	background: linear-gradient(110deg, var(--background-color) 50%, var(--highlight-color) 50%);
-}
+} */
