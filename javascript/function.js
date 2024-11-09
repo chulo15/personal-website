@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Adding the blur effect to the navbar on scroll
     window.onscroll = function() {
     var navbar = document.getElementById('navbar');
     if (window.scrollY > 100) {
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     };
 
-    // Adding typing effect to the text
     let text = document.querySelector('.typing');
     let i = 0;
     let textContent = text.textContent;
