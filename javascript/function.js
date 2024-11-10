@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.remove('scrolled');
     }
     };
+    // kapag pinindut yung app iikot yung card tapos may text na kung ano na yung expertise example "intermidiate" "beginner" "advanced" "expert"
+    var htmllogo = document.getElementById('htmllogo');
 
     let text = document.querySelector('.typing');
     let i = 0;

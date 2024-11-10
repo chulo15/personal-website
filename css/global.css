@@ -70,6 +70,7 @@ header.scrolled {
     font-size: 2.3rem;
     font-weight: 500;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.433);
+    margin-left: 3rem;
 }
 
 nav ul {
@@ -143,6 +144,8 @@ nav ul li a:hover {
 .banner-img img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: all 1s ease;
+    cursor: pointer;
 }
 
 .contact {
@@ -159,8 +162,29 @@ nav ul li a:hover {
 .about h2 {
     font-size: 2.5rem;
 }
-
-.about .container p {
+.about-img img {
+    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 50%;
+    margin: 1rem 1rem;
+}
+.about-container {
+    border: #1b1d1d solid 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    background-color: #94b3d149;
+    padding: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.about-text {
+    margin-left: 4rem;
+    margin-top: 5rem;
+    align-items: center;
+}
+.about-container p {
     font-size: 1rem;
     color: #1b1d1d;
     margin-top: 1rem;
@@ -172,14 +196,6 @@ nav ul li a:hover {
     font-size: 0.875rem;
     opacity: 0.5;
     margin-top: 1.5rem;
-}
-
-.about-img {
-    width: auto;
-
-    img {
-        height: 500px;
-    }
 }
 
 .skills {
@@ -225,7 +241,8 @@ nav ul li a:hover {
 
 .app-image:hover {
     transform: scale(1.3);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(225, 47, 2, 0.67);
+    cursor: pointer;
 }
 
 .portfolio {
@@ -280,22 +297,23 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
+    width: 100%;
 }
-.watermark img{
+.watermark img {
     display: flex;
     justify-self: center;
     width: 25%;
 }
-.link a{
+.link a {
     color: rgba(8, 7, 7, 0.864);
     text-decoration: underline;
 }
-.footer-right{
+.footer-right {
     display: flex;
     justify-content: space-around;
 }
-.contact-info{
+.contact-info {
     margin-right: 2rem;
 }
