@@ -1,26 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
-    window.onscroll = function() {
-    var navbar = document.getElementById('navbar');
-    if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-    };
     // kapag pinindut yung app iikot yung card tapos may text na kung ano na yung expertise example "intermidiate" "beginner" "advanced" "expert"
-    var htmllogo = document.getElementById('htmllogo');
-
-    let text = document.querySelector('.typing');
-    let i = 0;
-    let textContent = text.textContent;
-    text.textContent = '';
-
-    function typeWriter() {
-    if (i < textContent.length) {
-        text.textContent += textContent.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100);
-    }
-    }
-    typeWriter();
-});
+    document.addEventListener("DOMContentLoaded", function() {
+        const texts = [
+            "I'm an Information Technology Student.",
+            "Welcome to my website!",
+            "Feel free to explore!"
+        ];
+        const typingTextElement = document.getElementById("typing-text");
+        let textIndex = 0;
+        let charIndex = 0;
+    
+        function typeWriter() {
+            if (charIndex < texts[textIndex].length) {
+                typingTextElement.innerHTML += texts[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 120);
+            } else {
+                // Pause before starting the next sentence
+                setTimeout(() => {
+                    charIndex = 0;
+                    textIndex = (textIndex + 1) % texts.length; // Cycle through texts
+                    typingTextElement.innerHTML = ""; // Clear text for the next sentence
+                    typeWriter(); // Start typing next sentence
+                }, 3000); // Pause duration between sentences
+            }
+        }
+    
+        // Start typewriter effect after a 5-second delay
+        setTimeout(typeWriter, 3500);
+    });

@@ -8,7 +8,9 @@
     </head>
     <body>
         <header>
-            <div id="logo"><a href="#banner"><p>W</p></a></div>
+            <div id="logo">
+                <a href="#banner"><p>W</p></a>
+            </div>
             <nav id="navbar">
                 <ul>
                     <li><a href="#banner">Home</a></li>
@@ -24,22 +26,23 @@
             <div class="banner-left">
                 <h1>Hi There! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="50px" /></h1>
                 <h2 class="highlight-blue">It's Me <span class="highlight-red">Winston Francisco</span></h2>
-                <p class="typing">And I am an Information Technology Student.</p><!--insert typewriter effect using javascript yata-->
+                <div class="typing-container">
+                    <p class="typing-text" id="typing-text"></p>
+                </div>
                 <div class="contact">
-                    <div class="social-icons"><!--ayusin yung hover ng icon kase naka box, dapat pabilog-->
+                    <div class="social-icons">
                         <a href="https://www.messenger.com/" target="_blank">
                             <img src="/images/contact apps/messenger.png" alt="messenger" class="social-icon" />
                         </a>
                         <a href="https://www.instagram.com/" target="_blank">
                             <img src="/images/contact apps/instagram.png" alt="Instagram" class="social-icon" />
                         </a>
-                        <a href="https://telegram.com/" target="_blank">
+                        <a href="https://web.telegram.org/k/" target="_blank">
                             <img src="/images/contact apps/telegram.png" alt="telegram" class="social-icon" />
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- lalagyan ng pag na hover yung img pwedeng pindutin tapos masuzoom, pupunta sa gitna yung img-->
             <div class="banner-img">
                 <img src="/images/winston.jpg" alt="Winston's picture" class="profile-image" />
             </div>
@@ -49,10 +52,12 @@
         <section id="about" class="about">
             <div class="about-container">
                 <div class="about-img">
-                    <img src="/images/mehh.jpg" alt="mehh">
+                    <img src="/images/mehh.jpg" alt="mehh" />
                 </div>
                 <div class="about-text">
-                    <h2>LET ME <span class="highlight-blue">TELL YOU</span> ABOUT <span class="highlight-red">ME</span></h2>
+                    <h2>
+                        LET ME <span class="highlight-blue">TELL YOU</span> ABOUT <span class="highlight-red">ME</span>
+                    </h2>
                     <p>
                         I am a vocational high school graduate with a strong interest in programming. I passed with
                         <span class="highlight-blue">good grades</span> and take pride in being
@@ -96,7 +101,7 @@
                 </div>
             </div>
         </section>
-<!--ayusin yung card  -->
+        <!--ayusin yung card  -->
         <section id="portfolio" class="portfolio">
             <div class="container">
                 <h2><span class="highlight-blue">My</span> Recent <span class="highlight-red">Works</span></h2>
@@ -104,27 +109,33 @@
                 <div class="portfolio-items">
                     <div class="portfolio-item">
                         <img src="/images/portpolio/sample3.jpg" alt="sample3" />
-                        <p>jbgsebgojsbgd</p>
+                        <h1 class="project-title">Importing Video</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="portfolio-item">
                         <img src="/images/portpolio/sample2.jpg" alt="sample2" />
-                        <p>importing audio</p>
+                        <h1 class="project-title">Importing Audio</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="portfolio-item">
                         <img src="/images/portpolio/sample3.jpg" alt="sample3" />
-                        <p>importing video</p>
+                        <h1 class="project-title">Importing Video</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="portfolio-item">
                         <img src="/images/portpolio/sample3.jpg" alt="sample3" />
-                        <p>a jfahfjabfafna;f</p>
+                        <h1 class="project-title">Importing Video</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="portfolio-item">
                         <img src="/images/portpolio/sample2.jpg" alt="sample2" />
-                        <p>importing audio</p>
+                        <h1 class="project-title">Importing Audio</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="portfolio-item">
                         <img src="/images/portpolio/sample3.jpg" alt="sample3" />
-                        <p>importing video</p>
+                        <h1 class="project-title">Importing Video</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -133,7 +144,9 @@
         <footer>
             <div class="footer-left">
                 <div class="watermark">
-                    <img src="/images/wlogo.jpg" alt="wlogo" />
+                    <div id="logo">
+                        <a href="#banner"><p>W</p></a>
+                    </div>
                     <h2>Winston Francisco</h2>
                 </div>
             </div>
@@ -152,7 +165,6 @@
                 </div>
             </div>
         </footer>
-
-        <script src="script.js"></script>
+        <script src="/javascript/function.js"></script>
     </body>
 </html>
