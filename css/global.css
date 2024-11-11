@@ -42,14 +42,15 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    backdrop-filter: blur(4px) saturate(165%);
+    -webkit-backdrop-filter: blur(11px) saturate(165%);
+    background-color: rgba(80, 227, 194, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     position: fixed;
-    border: var(--gray-color) solid 1px;
-    border-radius: 10px;
     top: 0.5rem;
     left: 5rem;
     right: 5rem;
-    background: linear-gradient(130deg, #5da39893, #40867d9d, #5da39893);
-    backdrop-filter: blur(2px);
     z-index: 1000;
     transition: background 0.3s ease;
 }
@@ -190,18 +191,20 @@ nav ul li a:hover {
 .about h2 {
     font-size: 2.5rem;
 }
-.about-img img {
+/* .about-img img {
     width: 100%;
     max-width: 20rem;
     max-height: 20rem;
     border-radius: 50%;
     margin: 1rem 1rem;
-}
+} */
 .about-container {
-    border: var(--gray-color) solid 2.5px;
-    border-radius: 1rem;
+    backdrop-filter: blur(4px) saturate(179%);
+    -webkit-backdrop-filter: blur(3px) saturate(179%);
+    background-color: rgba(80, 227, 194, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    background-color: var(--light-green-color);
     padding: 3rem;
     margin-top: 2rem;
     display: flex;
@@ -209,7 +212,7 @@ nav ul li a:hover {
     transition: transform 0.5s ease, box-shadow 0.6s ease;
 }
 .about-container:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     box-shadow: 0 6px 20px var(--gray-color);
 }
 .about-text {
@@ -218,7 +221,7 @@ nav ul li a:hover {
     align-items: center;
 }
 .about-container p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--grayish-color);
     font-weight: 500;
     margin-top: 1rem;
@@ -303,7 +306,7 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-.portfolio-item {
+.card {
     width: 300px;
     text-align: center;
     padding: 30px 30px;
@@ -315,16 +318,16 @@ nav ul li a:hover {
     background-color: var(--light-green-color);
 }
 
-.portfolio-item img {
+.card img {
     width: 100%;
 }
 
-.portfolio-item:hover {
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px var(--grayish-color);
 }
 
-.portfolio-item p {
+.card p {
     margin-top: 10px;
     font-size: 1.1rem;
     color: var(--bluish-color);
