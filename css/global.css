@@ -28,7 +28,6 @@ body {
     background-image: url("/images/bg.svg");
     background-size: cover;
     /* background-color: var(--bg-color); */
-    background-position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: var(--grayish-color);
@@ -62,14 +61,14 @@ header {
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 39px;
     object-fit: contain;
     transition: transform 0.5s ease, box-shadow 0.6s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 8px 30px var(--grayish-color);
 }
 
@@ -109,7 +108,8 @@ nav ul li a:hover {
 }
 
 .banner,
-.about {
+.about,
+.portfolio {
     height: 100dvh;
     display: flex;
     justify-content: space-evenly;
@@ -119,11 +119,11 @@ nav ul li a:hover {
 }
 
 .banner-left h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .banner-left .highlight-blue {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--bluish-color);
 }
 .highlight-blue {
@@ -152,19 +152,18 @@ nav ul li a:hover {
 }
 
 .banner-left {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 20px;
     font-style: italic;
     font-weight: 400;
 }
 
 .banner-img img {
-    width: 100%;
-    max-width: 350px;
+    width: auto;
+    max-width: 150px;
     border-radius: 20%;
     border: 5px solid transparent;
     background: linear-gradient(135deg, var(--mid-green-color), var(--green-color), var(--mid-green-color));
-    /* background: linear-gradient(135deg, rgba(50, 50, 50, 0.8), rgba(20, 20, 20, 0.8), rgba(50, 50, 50, 0.8)); */
     transition: transform 0.4s ease, box-shadow 0.5s ease;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
@@ -200,7 +199,7 @@ nav ul li a:hover {
 } */
 .about-container {
     backdrop-filter: blur(4px) saturate(179%);
-    -webkit-backdrop-filter: blur(3px) saturate(179%);
+    /* -webkit-backdrop-filter: blur(3px) saturate(179%); */
     background-color: rgba(80, 227, 194, 0.25);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
