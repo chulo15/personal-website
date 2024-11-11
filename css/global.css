@@ -10,7 +10,7 @@
     --mid-green-color: #40867d;
     --green-color: #004840;
     --white-color: #E0E7E9;
-    --bg-color: #d6dddf;
+    --bg-color: #c6e1e9;
 }
 
 * {
@@ -25,12 +25,13 @@ html {
 
 body {
     font-family: "Raleway", sans-serif;
-    /* background-image: url(/images/background.png); */
-    background-color: var(--bg-color);
+    background-image: url("/images/bg.svg");
+    background-size: cover;
+    /* background-color: var(--bg-color); */
     background-position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #333333;
+    color: var(--grayish-color);
 }
 
 a {
