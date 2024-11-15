@@ -9,14 +9,14 @@
     --light-green-color: #5da3988e;
     --mid-green-color: #40867d;
     --green-color: #004840;
-    --white-color: #E0E7E9;
+    --white-color: #e0e7e9;
     --bg-color: #c6e1e9;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* border: dashed red 1px; */
 }
 
 html {
@@ -27,9 +27,7 @@ body {
     font-family: "Raleway", sans-serif;
     background-image: url("/images/bg.svg");
     background-size: cover;
-    /* background-color: var(--bg-color); */
     background-attachment: fixed;
-    background-repeat: no-repeat;
     color: var(--grayish-color);
 }
 
@@ -44,19 +42,16 @@ header {
     backdrop-filter: blur(4px) saturate(165%);
     -webkit-backdrop-filter: blur(11px) saturate(165%);
     background-color: rgba(80, 227, 194, 0.5);
-    border-radius: 12px;
+    border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.125);
     position: fixed;
-    top: 0.5rem;
+    top: 1rem;
     left: 5rem;
     right: 5rem;
     z-index: 1000;
     transition: background 0.3s ease;
 }
 
-/* #banner, #about, #skills, #portfolio{
-
-} */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -84,11 +79,11 @@ header {
     margin-left: 1rem;
 }
 
-
 nav ul {
     display: flex;
     height: 100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -112,30 +107,33 @@ nav ul li a:hover {
 
 .banner,
 .about,
-.portfolio {
-    height: 100dvh;
+.portfolio,
+.skills {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    max-width: 80rem;
+    height: 100dvh;
+    max-width: 100%;
 }
 
 .banner-left h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    font-style: italic;
 }
 
 .banner-left .highlight-blue {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
+    font-style: italic;
     color: var(--bluish-color);
 }
 .highlight-blue {
     color: var(--bluish-color);
 }
-
 .highlight-red {
     color: var(--redish-color);
 }
+
 .typing-container {
     font-size: 1.2rem;
     font-family: monospace;
@@ -154,16 +152,10 @@ nav ul li a:hover {
     }
 }
 
-.banner-left {
-    font-size: 1.1rem;
-    margin-top: 20px;
-    font-style: italic;
-    font-weight: 400;
-}
 
 .banner-img img {
     width: auto;
-    max-width: 150px;
+    max-width: 300px;
     border-radius: 20%;
     border: 5px solid transparent;
     background: linear-gradient(135deg, var(--mid-green-color), var(--green-color), var(--mid-green-color));
@@ -191,24 +183,14 @@ nav ul li a:hover {
 }
 
 .about h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
-/* .about-img img {
-    width: 100%;
-    max-width: 20rem;
-    max-height: 20rem;
-    border-radius: 50%;
-    margin: 1rem 1rem;
-} */
 .about-container {
-    backdrop-filter: blur(4px) saturate(179%);
-    /* -webkit-backdrop-filter: blur(3px) saturate(179%); */
     background-color: rgba(80, 227, 194, 0.25);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 2px solid rgba(255, 255, 255, 0.125);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    padding: 3rem;
-    margin-top: 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     transition: transform 0.5s ease, box-shadow 0.6s ease;
@@ -218,8 +200,8 @@ nav ul li a:hover {
     box-shadow: 0 6px 20px var(--gray-color);
 }
 .about-text {
-    margin-left: 4rem;
-    margin-top: 5rem;
+    margin: 1rem auto;
+    text-align: justify;
     align-items: center;
 }
 .about-container p {
@@ -235,36 +217,32 @@ nav ul li a:hover {
     font-size: 0.875rem;
     opacity: 0.7;
     margin-top: 1.5rem;
-}
-
-.skills {
-    padding: 10rem 4rem;
     text-align: center;
 }
 
 .skills h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
 }
-
-.skills-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.skills {
+    text-align: center;
+    display: block;
+}
+#skills {
+    height: 50dvh;
 }
 
 .app-images-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 30px;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .app-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
     border-radius: 10px;
     padding: 1rem;
@@ -283,33 +261,30 @@ nav ul li a:hover {
     box-shadow: 0 4px 20px var(--grayish-color);
     cursor: pointer;
 }
-
-.portfolio {
-    padding: 50px 20px;
-}
-
 .portfolio h2 {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
 }
 
 .portfolio p {
     text-align: center;
-    margin-top: 10px;
     font-size: 1.2rem;
     color: var(--grayish-color);
+    padding: 1rem 1rem;
 }
 
 .portfolio-items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
+}
+.portfolio{
+    display: block;
+    text-align: center;
 }
 
 .card {
-    width: 300px;
+    max-width: 200px;
     text-align: center;
     padding: 30px 30px;
     transition: transform 0.3s ease, box-shadow 0.4s ease;
@@ -343,7 +318,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-weight: 300;
-    width: 100%;
 }
 .link a {
     color: rgba(8, 7, 7, 0.864);
@@ -353,49 +327,7 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.contact-info a{
+.contact-info a {
     margin-right: 2rem;
     color: black;
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .banner {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .banner-img img {
-        width: 60%;
-        max-width: 350px;
-    }
-
-    .about-container {
-        flex-direction: row;
-        max-width: 90%;
-    }
-
-    .skills-content {
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 1024px) {
-    header nav ul {
-        display: flex;
-    }
-
-    .banner {
-        flex-direction: row;
-        height: 100vh;
-    }
-
-    .banner-img img {
-        max-width: 350px;
-    }
-
-    .about-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
