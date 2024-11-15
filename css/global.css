@@ -54,6 +54,9 @@ header {
     transition: background 0.3s ease;
 }
 
+/* #banner, #about, #skills, #portfolio{
+
+} */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -395,3 +398,4 @@ footer {
         justify-content: space-between;
     }
 }
+
