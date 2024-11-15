@@ -152,7 +152,6 @@ nav ul li a:hover {
     }
 }
 
-
 .banner-img img {
     width: auto;
     max-width: 300px;
@@ -330,4 +329,15 @@ footer {
 .contact-info a {
     margin-right: 2rem;
     color: black;
+}
+
+@media (max-width: 768px) {
+    .banner, .about, .skills, .portfolio{
+        flex-direction: column;
+    }
+}
+@media (max-width: 540px) {
+    .banner, .about, .skills, .portfolio {
+        flex-direction: column;
+    }
 }
