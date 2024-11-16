@@ -256,7 +256,7 @@ nav ul li a:hover {
 }
 
 .app-image:hover {
-    transform: scale(1.3);
+    transform: scale(1.25);
     box-shadow: 0 4px 20px var(--grayish-color);
     cursor: pointer;
 }
@@ -277,25 +277,26 @@ nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
 }
-.portfolio{
+.portfolio {
     display: block;
-    text-align: center;
+    text-align: center;  
 }
 
 .card {
-    max-width: 200px;
+    max-width: 250px;
     text-align: center;
-    padding: 30px 30px;
+    padding: 25px 25px;
     transition: transform 0.3s ease, box-shadow 0.4s ease;
     border: #000000 solid 3px;
     box-shadow: 0 4px 15px var(--mid-green-color);
-    rotate: 1.5deg;
     border-radius: 30px;
     background-color: var(--light-green-color);
+    margin: 0 4rem;
 }
 
 .card img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -307,6 +308,19 @@ nav ul li a:hover {
     margin-top: 10px;
     font-size: 1.1rem;
     color: var(--bluish-color);
+}
+
+.btn-portfolio {
+    background-color: var(--gray-color);
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+.btn-portfolio:hover {
+    background-color: var(--grayish-color);
+    color: var(--white-color);
+    transform: scale(1.2);
 }
 
 footer {
@@ -332,12 +346,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .banner, .about, .skills, .portfolio{
+    .banner {
         flex-direction: column;
     }
 }
-@media (max-width: 540px) {
-    .banner, .about, .skills, .portfolio {
-        flex-direction: column;
+@media (max-width: 992px) {
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1rem;
+        height: auto;
     }
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="/portfolio/snakegame.css">
+</head>
+<style>
+    .return {
+        margin: 2rem 2rem;
+        text-align: right;
+    }
+</style>
+<body>
+    <div class="return">
+        <a href="/index.html"><img src="/images/return.svg" alt="return" title="Return to Homepage"></a>
+    </div>
+    <h1>Snake Game</h1>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div class="score">
+        <p>Score: <span id="score">0</span></p>
+    </div>
+    <div class="play-again" id="playAgain">
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+    <script src="/portfolio/snakegame.js"></script>
+</body>
+</html>
