@@ -181,9 +181,6 @@ nav ul li a:hover {
     max-width: 100px;
 }
 
-.about h2 {
-    font-size: 2.2rem;
-}
 .about-container {
     background-color: rgba(80, 227, 194, 0.25);
     border-radius: 12px;
@@ -219,7 +216,9 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.skills h2 {
+.skills h2,
+.portfolio h2,
+.about h2 {
     font-size: 2.2rem;
     text-transform: uppercase;
 }
@@ -228,7 +227,7 @@ nav ul li a:hover {
     display: block;
 }
 #skills {
-    height: 50dvh;
+    height: 70dvh;
 }
 
 .app-images-container {
@@ -260,38 +259,34 @@ nav ul li a:hover {
     box-shadow: 0 4px 20px var(--grayish-color);
     cursor: pointer;
 }
-.portfolio h2 {
-    font-size: 2.2rem;
-    text-transform: uppercase;
-}
 
 .portfolio p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: var(--grayish-color);
-    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .portfolio-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .portfolio {
     display: block;
-    text-align: center;  
+    text-align: center;
+    width: 80%;
+    height: auto;
+
 }
 
 .card {
     max-width: 250px;
     text-align: center;
-    padding: 25px 25px;
+    padding: 15px 15px;
     transition: transform 0.3s ease, box-shadow 0.4s ease;
     border: #000000 solid 3px;
     box-shadow: 0 4px 15px var(--mid-green-color);
     border-radius: 30px;
     background-color: var(--light-green-color);
-    margin: 0 4rem;
 }
 
 .card img {
@@ -307,20 +302,23 @@ nav ul li a:hover {
 .card p {
     margin-top: 10px;
     font-size: 1.1rem;
+    text-align: justify;
     color: var(--bluish-color);
 }
 
 .btn-portfolio {
-    background-color: var(--gray-color);
-    color: black;
+    background-color: var(--bluish-color);
+    color: var(--white-color);
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 8px 17px;
     font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
 }
 .btn-portfolio:hover {
-    background-color: var(--grayish-color);
-    color: var(--white-color);
-    transform: scale(1.2);
+    background-color: var(--redish-color);
+    transform: scale(1.1);
 }
 
 footer {
@@ -331,6 +329,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-weight: 300;
+    margin-top: 2rem;
 }
 .link a {
     color: rgba(8, 7, 7, 0.864);
@@ -345,16 +344,44 @@ footer {
     color: black;
 }
 
-@media (max-width: 768px) {
-    .banner {
-        flex-direction: column;
+/* Media Queries */
+
+@media (width <= 1068px) {
+    header {
+        display: block;
+        margin: auto;
     }
-}
-@media (max-width: 992px) {
+    header #navbar {
+        content-visibility: hidden;
+    }
     .banner {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 1rem;
-        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-img img {
+        max-width: 60%;
+    }
+    .about-container {
+        max-width: 80%;
+    }
+    .app-images-container {
+        max-width: 80%;
+        display: flex;
+        margin: auto;
+    }
+    .app-image {
+        max-width: 55px;
+        max-height: 55px;
+    }
+    .card {
+        max-width: 200px;
+        max-height: 200px;
+        margin: auto;
+    }
+    .card p {
+        content-visibility: hidden;
     }
 }
+/* by 458px below nagkakaroon ng margin sa right tsaka naiipit yung mga content */

@@ -25,6 +25,5 @@
             }
         }
     
-        // Start typewriter effect after a 5-second delay
         setTimeout(typeWriter, 3500);
     });
