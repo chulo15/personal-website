@@ -129,9 +129,11 @@ nav ul li a:hover {
 }
 .highlight-blue {
     color: var(--bluish-color);
+    font-weight: 700;
 }
 .highlight-red {
     color: var(--redish-color);
+    font-weight: 700;
 }
 
 .typing-container {

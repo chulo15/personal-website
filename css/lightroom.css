@@ -1,14 +1,38 @@
-body{
+body {
     background-color: rgb(41, 39, 39);
 }
-.container{
-    width: 90%;
+* {
+    margin: 0;
+    /* border: 1px solid red; */
+}   
+.container {
+    width: 100%;
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: auto;
 }
-.container img{
-    max-width: 200px;
+.card img {
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 10px;
+    border: 2px gray solid;
+}
+.card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    padding: 30px;
+    object-fit: cover;
+}
+.card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(95, 87, 87, 0.816);
+}
+.return {
+    margin: 2rem 2rem;
+    text-align: right;
 }
