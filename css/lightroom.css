@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(41, 39, 39);
+}
+.container{
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.container img{
+    max-width: 200px;
+}
