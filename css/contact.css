@@ -7,6 +7,16 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.contact {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-items: stretch;
+}
+.contact img {
+    width: 2.5rem;
+    border-radius: 100%;
+    max-width: 100px;
+}
 
 .contact-form-section h2 {
     text-align: center;

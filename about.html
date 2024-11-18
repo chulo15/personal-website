@@ -28,8 +28,10 @@
                     </li>
                 </ul>
             </nav>
+            <div class="menu-icon" onclick="toggleNavbar()"><img src="/images/svg/burger.svg" alt="burger" id="burger"></div>
         </header>
-        <div class="about">
+        <div class="space"></div>
+        <div class="about fade">
             <div class="about-text">
                 <h2>know <span class="highlight-blue">who</span> i <span class="highlight-red">am</span></h2>
                 <p>
@@ -53,21 +55,31 @@
                     <span class="highlight-red">meaningful work</span>, and build things I’m
                     <span class="highlight-blue">proud of</span>.
                 </p>
-                <p>Apart from coding, some other activities I enjoy are:</p>
-                <ul class="hobby-list">
-                    <li>Video Edit</li>
-                    <li>Photography</li>
-                    <li>Badminton</li>
-                    <li>Travel</li>
-                </ul>
-                <p class="motto">"Driven by curiosity, inspired by solutions." <br> - Winston Francisco</p>
             </div>
             <div class="about-icon">
                 <img src="/images/icon2.jpg" alt="icon">
             </div>
         </div>
+        <div class="fade">
+            <p class="motto fade">"Driven by curiosity, inspired by solutions." <br> - Winston Francisco</p>
+        </div>
+        <!-- gawing carousel or kaya may arrow pang next -->
+        <div class="about2 fade">
+            <h2>Apart from coding, some other activities I enjoy are</h2>
+            <div class="about-video">
+                <video src="/videos/photos.mp4" controls muted loop playsinline title="Photos"></video>
+            </div>
+        </div>
+        <!-- <ul class="hobby-list">
+            <li>Video Edit</li>
+            <li>Photography</li>
+            <li>Badminton</li>
+            <li>Travel</li>
+            <li>Watching Anime</li>
+            <li>play guitar</li>
+        </ul> - list lang ito -->
         <!-- skill section -->
-        <section id="skills" class="skills">
+        <section id="skills" class="skills fade">
             <h2><span class="highlight-blue">Professional </span><span class="highlight-red">Skillsets</span></h2>
             <div class="skills-content">
                 <div class="app-images-container">
@@ -84,7 +96,6 @@
                         <p>Intermediate</p>
                     </div>
                     <div class="app-image">
-                        <a href="/portfolio/lightroom.html">
                             <img src="/images/apps/lightroomlogo.png" alt="photoshoplogo" />
                             <p>Advance</p>
                         </a>
@@ -104,5 +115,6 @@
                 </div>
             </div>
         </section>
+        <script src="/javascript/function.js"></script>
     </body>
 </html>
