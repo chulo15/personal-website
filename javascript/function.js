@@ -27,3 +27,4 @@
     
         setTimeout(typeWriter, 3500);
     });
+    
