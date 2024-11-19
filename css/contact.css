@@ -8,9 +8,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .contact {
-    padding: 1rem 1rem;
+    /* padding: 1rem 1rem; */
     display: flex;
-    justify-items: stretch;
+
+    justify-items: center;
 }
 .contact img {
     width: 2.5rem;
