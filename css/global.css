@@ -62,7 +62,8 @@ header {
     border: none;
     height: 2px; 
     background: linear-gradient(to right, var(--light-green-color), var(--gray-color), var(--light-green-color)); 
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 .social-icons {
