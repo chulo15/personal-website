@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+section {
+    margin-top: 2rem !important;
+}
+
 :root {
     --bluish-color: #004953;
     --redish-color: #8f001a;
@@ -108,7 +112,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #022125;
+    color: #353535;
     font-size: 1.5rem;
     font-weight: 550;
     padding: 5px 10px;
@@ -122,12 +126,12 @@ nav a {
 }
 
 nav ul li a:hover {
-    background: linear-gradient(to bottom, var(--light-green-color), var(--mid-green-color));
+    /* background: linear-gradient(to bottom, var(--light-green-color), var(--mid-green-color)); */
     color: black;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.6s ease;
-    transform: scale(1.1);
-    box-shadow: 0 6px 6px var(--light-green-color);
+    transform: scale(1.03);
+    /* box-shadow: 0 6px 6px var(--light-green-color); */
 }
 nav img {
     max-width: 25px;
@@ -206,7 +210,7 @@ nav img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 70vh;
+    height: 100vh;
     max-width: 90%;
 }
 .about-text {
@@ -347,6 +351,7 @@ nav img {
     text-align: center;
     width: 80%;
     height: auto;
+    margin-top: 2rem;
 }
 
 .card {
@@ -482,6 +487,9 @@ nav img {
     .menu-icon {
         display: block;
         width: 40px;
+    }
+    .social-icons {
+        justify-content: center;
     }
 
     #navbar {
